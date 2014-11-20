@@ -1,0 +1,116 @@
+\chapter{Problemas Aritméticos}
+\section{O Número de Euler}
+\textit{Encontre os valores limite das funções}
+$$\varphi(x) = \left( 1 + \frac{1}{x}\right)^{x} \textrm{ e } \phi(x) = \left(1 + \frac{1}{x}\right)^{x+1}$$
+para um aumento infinito de x.
+A solução simples desse interessantíssimo problema é baseada na inequação exponencial
+$$x^{\varepsilon} < 1 + \varepsilon(x - 1)$$
+Onde $x \geq 0$ e $\varepsilon$ é uma fração própria entre 0 e 1.
+Vamos introduzir dois n'umeros arbitrários $a$ e $b$, com $a>b$ e $b>0$, e na inequação exponencial
+$$x = 1 + \frac{1}{b}, \varepsilon = \frac{b}{a},$$
+e então
+$$x = 1 - \frac{1}{b+1}, \varepsilon = \frac{b + 1}{a + 1}.$$
+No primeiro caso obteremos $\left(1 + \frac{1}{b}\right)^{b/a} < 1 + \frac{1}{a}$ ou
+\begin{equation}
+\left(1 + \frac{1}{b} \right)^{b} < \left( 1 + \frac{1}{a}\right)^{a}
+\end{equation}
+E no segundo    $\left(q - \frac{1}{b+1}\right)^{b+\frac{1}{a}+1} < 1 - \frac{1}{a + 1}$ ou
+$$\left(\frac{b}{b + 1}\right)^{b+1} < \left(\frac{a}{a + 1}\right)^{a+1}$$
+ou, finalmente,
+\begin{equation}
+\left(1 + \frac{1}{b} \right)^{b+1} < \left( 1 + \frac{1}{a}\right)^{a+1}\\
+\end{equation}
+As duas inequações obtidas, $(1.1)$ e $(1.2)$, contém o teorema:
+\textit{Com um argumento $x \geq 0$  crescente para a função $\varphi(x) = \left(1 + \frac{1}{x} \right)^{x}$ cresce enquanto a função $\phi(x) = \left(1 + \frac{1}{x+1} \right)^{x}$ decresce.} 
+Assim, para $X > x$
+$$\varphi(X) > \varphi(x), \textrm{ enquanto que } \phi(X) < \phi(x)$$.
+Uma vez que, por outro lado, para os \textit{mesmos} valores do argumento a função $\phi$ excede a função $\varphi$ 
+$$\left[ \phi(x) = \left( 1 + \frac{1}{x}\right)*\varphi(x)\right],$$
+Obtemos as desigualdades
+$$\varphi(x) < \varphi(X) < \phi(X) \textrm{ e } \varphi(X) < \phi(X) < \phi(x),$$
+i.é., todo valor da função $\phi$ é maior que qualquer valor da função $\varphi$ (Considerando-se apenas valores positivos).
+Imagine dois pontos móveis $p$ e $P$ no eixo positivo situados nas distancias $\varphi(t)$ e $\phi(t)$ do ponto zero no tempo t e começa seus movimentos no instante $t = 1$. 
+O ponto $p$, começando de $\varphi(1)=2$, movendo-se continuamente para a direita, enquanto o ponto $P$, que começa em $\phi(1)=4$, movendo-se continuamente para a esquerda.
+Porém, como $\phi(t)$ é sempre maior que $\varphi(t)$, i.é., $P$ sempre estará à direita de $p$, os pontos nunca se encontrarão. No entanto, a distancia entre eles é diminuída
+$$d=\phi(t) - \varphi(t) = \frac{\varphi(t)}{t},$$
+ Então $\varphi(t) < 4$, e então $d < \frac{4}{t}$ sem limite conforme o tempo aumenta, então os pontos estarão separados por uma distancia infinitamente pequena.
+ A única maneira de explicar essa situação é assumindo que o ponto em que os pontos $p$ e $P$ se aproximam infinitamente  pela direita e pela esquerda, respectivamente, sem nunca se tocarem.
+ A distância deste ponto fixo para o zero é chamada de \textit{Número de Euler e}.
+A proposta de designar esse número, que também forma a base do sistema logarítmico natural (No14), pela letra $e$ vem de Euler(\textit{Commentarii Academiae Petropolitanae ad annum 1739}, vol. IX).\\
+\textit{A importante desigualdade}
+\begin{equation}
+\left(1 + \frac{1}{x}\right)^{x} < e < \left(1 + \frac{1}{x}\right)^{x+1} 
+\end{equation}
+\textit{é verdadeiro para o Número de Euler} ($x > 0$).
+Se escolhermos $x = 1,000,000$, essa desigualdade resultará $e$ exatamente para cinco casas decimais. Porém, o uso de séries para $e$ é um método de computação melhor.\\
+Enão obtemos
+$$e = 2.718281828459045... .$$
+Os valores limite procurados, são
+$$\lim_{x\rightarrow \infty} \left( 1 + \frac{1}{x}\right)^{x} = e \textrm{  e  } \lim_{x\rightarrow \infty} \left( 1 + \frac{1}{x}\right)^{x+1} = e$$
+O primmeiro é um limite superior, enquanto o segundo, inferior.
+Nota: Da desigualdade (1.3) para o número $e$ a desigualdade para a função exponencial $e^{x}$ segue direto.\\
+1. Na desigualdade
+$$\left(1 + \frac{1}{x}\right)^{x} < e$$
+Substituimos $x$ por $\frac{1}{P}$, onde P é qualquer número maior que zero; elevamos $e$ à potência $P$ e obtemos
+\begin{equation}
+e^{P} > 1 + P
+\end{equation}
+2. Na desigualdade
+$$e < \left(1 + \frac{1}{x}\right)^{x + 1}$$
+Substituimos $x+1$ por $\frac{-1}{n}$, assim $1 + \frac{1}{x}$ por $\frac{1}{1+n}$, n sendo uma fração própria negativa $\neq 0$; atribuimos à e a potência n e obtemos
+\begin{equation}
+e^{n} > 1 + n
+\end{equation}
+3. Consideramos que para toda fração imprópria $N$, $(1+N)$ é negativo e consequentemente temos
+\begin{equation}
+e^{N} > 1 + N.
+\end{equation}
+Combinando as desigualdades (1), (2), (3), obtemos a \textit{desigualdade da função exponencial:}
+$$e^{x} > 1 + x, $$
+que é verdadeiro para todo $x$ real e só vira uma equação quando $x=0$. A desigualdade obtida leva diretamente para o então chamado limite da função exponencial.\\
+Seja $x$ um número real e $n$ um número real positivo com magnitude tal que $\left(1 + \frac{x}{n}\right) \geq 0$. De acordo com a desigualdade da função exponencial,
+$$e^{\frac{x}{n}} > 1 + \frac{x}{n} \textrm{  e  } e^{-\frac{x}{n}} > 1 - \frac{x}{n}.$$
+Atribuímos a potência $n$ à essas desigualdades, no caso da segunda, no entando, só depois de multiplicada por $\left(1+ \frac{x}{n}\right)$. Que resulta em
+$$e^{x} > \left(1+\frac{x}{n}\right)^{n} \textrm{  e  } \left(1+\frac{x}{n}\right)^{n}e^{-x} > \left(1-\frac{x^{2}}{n^{2}}\right)^{n}$$  
+Então, o lado direito da segunda desigualdade , de acordo com a desigualdade exponencial, é maior que $1 - \frac{x^{2}}{n}$, então
+$$\left(1 + \frac{x}{n}\right)^{n}e^{-x} > 1 - \frac{x^{2}}{n} \textrm{  ou  }  \left(1 + \frac{x}{n}\right)^{n} > \left(1 - \frac{x^{2}}{n}\right)^{n}e^{x}$$
+Combinando as desigualdades obtidas, teremos
+$$\left(1 - \frac{x^{2}}{n}\right)^{n}e^{x} <  \left(1 + \frac{x}{n}\right)^{n} < e^{x}.$$
+Se $n$ for crescer infinitamente, o lado esquerdo da equação vai se transformar em $e^{x}$ e obteremos a \textit{equação limite da função exponenicial:}
+$$\lim_{x\rightarrow \infty} \left( 1 + \frac{x}{n}\right)^{n} = e^{x} $$
+onde x representa qualquer número real e $n$ é uma magnitude crescente infinita.                
+\section{O Problema Sobre Campos e Vacas de Newton}
+Em seu \textit{Atithmetica universalis} (1707), Newton propõe o seguinte problema:
+\textit{\\
+$a$ vacas pastam em $b$ campos em $c$ dias,\\                        
+$a'$ vacas pastam em $b'$ campos em $c'$ dias,\\
+$a''$ vacas pastam em $b''$ campos em $c''$ dias;\\
+qual relação existe entre nove magnitudes de a para c''?}
+É sabido de que todos os campos provém o mesmo tanto de grama,que o crescimento diário do campo permanesce constante e que as vacas comem o mesmo tanto de grama por dia.
+SOLUÇÃO: Seja $M$ o total de grama contida em cada campo no primeiro dia, $m$ o crescimento diário de cada campo e $Q$ o consumo diário de cada vaca.
+No final do primeiro dia o montante de grama que sobrou em cada pasto é de
+$$bM + bm - aQ,$$ 
+No final do segundo dia
+$$bM + 2bm - 2aQ,$$ 
+No final do terceiro dia
+$$bM + 3bm - 3aQ,$$
+então no final do c-ésimo dia
+\begin{equation}
+bM + cbm - caQ                                         
+\end{equation}                                      
+De forma semelhante, as seguintes equações são obtidas:
+\begin{equation}
+b'M + c'b'm - c'a'Q                                         
+\end{equation}
+e
+\begin{equation}
+b''M + c''b''m - c''a''Q                                         
+\end{equation}
+Se (1) e (2) forem equações lineares para os M e m, obtemos
+$$M=\frac{cc'(ab' - ba')}{bb'(c'-c)}Q,\textrm{  } m=\frac{bc'a' - b'ca}{bb'(c'-c)}Q.$$
+Se esses valores são introduzidos na equação (3) e o resultado multiplicado por $\frac{[bb'(c' - c)]}{Q}$, obteremos a seguinte relação:
+$$b''cc'(ab'-ba') + c''b''(bc'a' - b'ca) = c''a''bb'(c'- c).$$
+A solução é mais fácilmente vista quando expressa na forma de determinantes. Se $q$ representaa recíproca de $Q$, (1), (2) e (3) assumem a forma\\
+\textit{bM + cbm + caq =0, \\ 
+b'M + c'b'm + c'a'q = 0, \\ 
+b''M + c''b''m + c''a''q = 0.}
