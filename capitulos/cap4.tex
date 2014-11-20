@@ -1,0 +1,57 @@
+\chapter{Problemas Náuticos e Astronômicos}
+\section{A curva de sombra}
+\textit{Para determinar a curva descrita pela sombra de um ponto da vareta durante um dia,} quando a vareta está fixa em um local com latitude $\varphi$ e a inclinação do sol para o dia é de $\delta.$\\\\
+SOLUÇÃO: Escolhemos a perpendicular do ponto da vareta para o horizonte do local 
+
+\section{Eclipses Lunares e Solares}
+\textit{Para determinar o início e fim de um eclipse solar, juntamente com a maior fração do disco solar obscura, com as ascensões e declinações corretas e o ângulo do sol e da lua em dois determinados momentos} \\
+EXEMPLO. No famoso eclipse solar que ocorreu em Atenas durante a guerra do Peloponeso em 3 de agosto de 431, as magnitudes mencionadas, às 14:30 e 17:30 no horário Ateniano eram\\
+
+\begin{tabular}{clr}
+	
+	$A_0 = 126^051' 52'',$&$\Delta_0=19^023'46'',$&$R_0=15'52'',$ \\
+	$\alpha_0=126^040'55'',$&$\delta_0=19^038'58'',$&$r_0=15'38.5''$ \\
+	\\
+	& \textrm{e}\\
+	\\
+	$A_1 = 126^054' 21'',$&$\Delta_1=19^023'11'',$&$R_1=15'52'',$ \\
+	$\alpha_1=127^008'49'',$&$\delta_1=19^024'30'',$&$r_1=15'36.5''$ \\\\
+	
+\end{tabular}
+ \\
+Um eclipse lunar só pode ocorrer quando a lua está suficientemente perto do sol na esfera celestial, i.é, no momento que as diferenças $a = \alpha-A$ e $d = \delta - \Delta$ entre as acensões e declinações dos dois corpos são suficientemente pequenas.\\
+O teorema do cosseno esférico dá para a distância z esférica dos pontos médios dos dois corpos(o seu eixo central) a fórmula
+$$\cos z = \sin\Delta\sin\delta+\cos\Delta\cos\delta\cos a$$ 
+Substituindo $\cos z \textrm{ e } \cos a \textrm{ por }$
+$$1 - 2\sin^2\frac{z}{2} \textrm{ e } 1 - 2\sin^2\frac{a}{2}$$
+obtemos
+$$1 - 2\sin^2\frac{z}{2}=\cos d -2\cos\Delta\cos\delta\sin^2\frac{a}{2}.$$
+Se escrevermos $1 - 2\sin^2\frac{d}{2} \textrm{ por } \cos d, \textrm{obteremos}$
+$$sin^2\frac{z}{2} = \cos \Delta\cos\delta\sin^2\frac{a}{2}$$
+Se considerarmos que, de acordo com nossa hipótese, $ a$ e $d$ e então, também $z$ são pequenos ângulos que nunca excedem $1^0$, podemos substituir os ângulos pelos seus senos e escrever
+$$z^2=a^2\cos\Delta\cos\delta+d^2.$$
+Se além disso simplificarmos, teremos
+$$sqrt{\cos\Delta\cos\delta}=g \textrm{ e }ag=x$$
+e substituir $y$ por $d$, obtemos a simples equação
+$$z^2=x^2+y^2$$
+As magnitudes $a,x,y \textrm{ e }z$ são mais convenientemente medidas em segundos angulares.
+
+Se as acensões e declinações da lua e sol em dois momentos suficientemente parecidos com o tempo do eclipse (o primeiro momento após o tempo 0) são conhecidos e são, por exemplo, $\alpha_0, A_0, \delta_0, \textrm{ e } \Delta_0$ para o primeiro momento e $\alpha_1, A1, \delta_1, \textrm{ e } \Delta_1$ para o segundo, então também saberemos os valores de $a, d \textrm{ e } g $, e então também $x=ga$ e $y=d$ para estes instantes e podemos calcular ao crescimento da hora $h$ e $k$ de $x$ e $y$. Como o eclipse ocorre por um pequeno tempo, dizemos que $x$ e $y$ crescem dentro de um tempo finito e, consequentemente, no tempo t, i.é, no momento t após o instante 0,
+$$x=x_0+ht \textrm{ e } y=y_0+kt.$$
+Se introduzirmos esses valores na equação anterior, temos 
+$$z^2=(x_0+ht)^2+(y_0+kt)^2,$$
+que nos permite calcular o eixo central dos dois corpos no momento t.\\
+O eclipse começa e termina nos instantes em que o eixo central z é igual à soma s dos dois radii $R$ e $r$. No período de tempo EF a perpendicular para Ss de E, e então $EAe=p, AEK =R. \textrm{ e } FES=eKE=k.$ Como $p$ é um ângulo externo do triangulo EKA, temos $p=R+k$. Também segue de $\Delta SEF $
+$$\sin k = \frac{SF}{SE} = \frac{Ss}{SE} - \frac{Ee}{SE}.$$    
+\begin{figure}[h!]
+	\centering
+	\includegraphics{imagens/eclipse}
+	\caption{Fig. 101}
+	\label{figRotulo}
+\end{figure}
+Uma vez que o minuendo do lado direito é o seno do ângulo do raio do sol e o subtraendo é o seno da paralaxe solar, que segue 
+$$\sin k = \sin R - \sin P$$
+ou, porque o angulo envolvido é muito pequeno ($k$ é menor que $16.2', R< 16.3', \textrm{e}P<8.9'$),
+$$k=R-P,$$
+como descrito acima.\\
+A ascensão reta do centro do círculo de sombra é a ascensão reta do sol aumentada ou diminuída por $180^0$ e a declinação é o valor recíproco da declinação solar. Levando em conta a refração atmosférica, ao calcular um eclipse lunar, o valor teórico do raio da sombra circular dada por $R=p+P-R$, tem de ser substituída por um valor 2\% maior.  
