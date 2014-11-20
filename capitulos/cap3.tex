@@ -1,0 +1,40 @@
+\chapter{Problemas Estereométricos}
+
+\section{A esfera que circunscreve um tetraedro}
+\textit{Para determinar o raio de uma esfera que circunscreve um tetraedro o qual todas as seis arestas são dadas.}\\
+Deve-se comparar o desenvolvimento de Legendre em \textit{Éléments de Géométrie} Nota V. Primeiro resolveremos o\\
+PROBLEMA PRELIMINAR: \textit{Para encontrar a relação entre os seis maiores arcos que conectam quatro pontos de uma superfície esférica.}\\
+Vamos chamar os quatro pontos de 0, 1, 2, 3, os \textit{arcos} que os conectam de 01, 02, 03, 23, 31, 12, os raios (considerando como vetores) que apontam para eles de $r_0, r_1, r_2, r_3$ e suas magnitudes comuns de $h$. Como sempre há uma relação linear homogenia entre quatro vetores de um espaço, temos a equação
+$$\alpha r_0+\beta r_1+\lambda r_2 + \delta r_3 =0,$$
+em que nem todos os coeficientes $\alpha, \beta, \lambda, \delta,$ desaparecem simultaneamente. Multiplicaremos a relação sequencial em forma escalar por $r_0, r_1, r_2, r_3, $ e obteremos as quatro equações
+
+\begin{eqnarray*}
+	r_0r_0\alpha+r_0r_1\beta + r_0r_2\lambda + r_0r_3\delta = 0\\
+	r_1r_0\alpha+r_1r_1\beta + r_1r_2\lambda + r_1r_3\delta = 0\\
+	r_2r_0\alpha+r_2r_1\beta + r_2r_2\lambda + r_2r_3\delta = 0\\
+	r_3r_0\alpha+r_3r_1\beta + r_3r_2\lambda + r_3r_3\delta = 0\\
+\end{eqnarray*}
+
+Contudo, quando quatro equações lineares homogêneas com quatro variáveis $(\alpha, \beta, \lambda, \delta)$ possuem uma solução, o determinante da matriz tem de ser zero. Consequentemente,
+
+$$\left[
+\begin{array}{cccc}
+	r_0r_0\alpha & r_0r_1\beta & r_0r_2\lambda & r_0r_3\delta\\
+	r_1r_0\alpha & r_1r_1\beta & r_1r_2\lambda & r_1r_3\delta\\
+	r_2r_0\alpha & r_2r_1\beta & r_2r_2\lambda & r_2r_3\delta\\
+	r_3r_0\alpha & r_3r_1\beta & r_3r_2\lambda & r_3r_3\delta\\
+\end{array}
+\right]=0$$
+
+Substituimos cada produto $r_nr_v$ por $h^2 \cos nv$, eliminando todos os fatores $h^2$, e obtemos a relação que estamos procurando
+
+$$\left[
+\begin{array}{cccc}
+\cos 00 & \cos 01 & \cos 02 & \cos 03\\
+\cos 10 & \cos 11 & \cos 12 & \cos 13\\
+\cos 20 & \cos 21 & \cos 22 & \cos 23\\
+\cos 30 & \cos 31 & \cos 32 & \cos 33\\
+\end{array}
+\right]=0$$
+
+
