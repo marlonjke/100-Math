@@ -4,21 +4,33 @@
 \usepackage{geometry} 
 \geometry{a4paper} 
 \usepackage{graphicx} 
+\usepackage{multicol}
 
-\title{Tópicos retirados do livro "100 Great Problems of Elementary Mathematics de Henrich Dorie"}
+\title{Tópicos interessantes retirados do livro "100 Great Problems of Elementary Mathematics de Henrich Dorie"}
 \author{Marlon Janke}
 
+\let\cleardoublepage\clearpage % Comando para retirar as páginas em branco entre capítulos.
+
 \begin{document}
-	
-\maketitle
-\tableofcontents
-\include{capitulos/prefacio}
-\include{capitulos/cap1}
-\include{capitulos/cap2}	
-\include{capitulos/cap3}
-\include{capitulos/cap4}
-\include{capitulos/cap5}
-\listoffigures
-\listoftables
+
+\maketitle 					 % Capa
+\tableofcontents  			 % Sumário
+\include{capitulos/prefacio} % prefácio
+\include{capitulos/cap1}     % Problemas Aritméticos
+\include{capitulos/cap2}	 % Cônicas e Ciclóides
+\include{capitulos/cap3}     % Problemas Estereométricos
+\include{capitulos/cap4}     % Náuticos e Astronômicos
+\include{capitulos/cap5}     % Extremos
+\listoffigures				 % Índice figuras 
+
+\begin{thebibliography}{1}
+	\bibitem[1]{meire} Heinrich Dorie
+		100 Great Problems of Elementary Mathematics
+		THEIR HISTORY AND SOLUTION
+		New York 1965
+
+\end{thebibliography}
+
+
 
 \end{document}
